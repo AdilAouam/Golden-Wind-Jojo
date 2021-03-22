@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-family: "SF Fedora", sans-serif;
+    background: linear-gradient(to top left, #413c28, #82652C);
+    color:#334b2a;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-top: 3rem;
+}
+
+img {
+    width: 100%;
+    padding:0.5rem ;
+    border-radius: 2rem;
+    box-shadow: 10px 5px 10px black ;
+}
+.container {
+    width: 80%;
+    height: 93%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top left, #413c28, #82652C);
+    border-radius: 2rem;
+}
+
+.boss {
+    margin-right: 2rem;
+}
+
+.jojologo {
+    width: 150px;
+    height: 90%;
+    margin-top: -1rem;
+    box-shadow: none;
+}
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+.active {
+    color: white;
+}
+
+.bloc2 {
+    margin-top: -4rem;
+    width: 100%;
+    height: 85%;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(15,1fr);
+}
+
+.squalo {
+    width: 100%;
+    grid-column: 10/16 ;
+    grid-row: 9/13;
+}
+
+.tiziano {
+    width: 85%;
+    grid-column: 13/19;
+    grid-row: 2/5;
+
+}
+
+.carne {
+    width: 90%;
+    grid-column: 2/8;
+    grid-row: 8/15;
+}
+
+.secco {
+    width: 75%;
+    grid-column: 20/26;
+    grid-row: 2/5;
+}
+
+.cioccolata {
+    width: 100%;
+    grid-column: 18/24;
+    grid-row: 10/16;
+}
+
+.squalo:hover {
+    transition: transform .5s;
+    transform: scale(1.2);
+ }
+
+ .tiziano:hover {
+    transition: transform .5s;
+    transform: scale(1.3);
+ }
+
+ .carne:hover {
+    transition: transform .5s;
+    transform: scale(1.3);
+ }
+
+ .secco:hover {
+    transition: transform .5s;
+    transform: scale(1.3);
+ }
+
+ .cioccolata:hover {
+    transition: transform .5s;
+    transform: scale(1.3);
+ }
+
+ .telite {
+     justify-self: center;
+    align-self: center;
+    grid-column: 2/11;
+    grid-row: 2/7;
+    font-size: 5rem;
+    line-height: 6rem;
+ }
+
+@font-face {
+    font-family: "SF Fedora";
+    src: url("../font/sf_fedora/SF\ Fedora.ttf");
+}
+
+@media (max-width: 1100px) {
+    
+    .body {
+        width: auto;
+        height: auto;
+    }
+    .container {
+        width: auto;
+        height: auto;
+        background: linear-gradient(to top left, #413c28, #82652C);
+        background-size: cover;
+    }
+
+    .menu {
+        display: inline-block;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .telite {
+        margin-top: 5rem;
+    }
+    
+    .bloc2 {
+        display: inline-block;
+        text-align: center;
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+
+    .imgjojo {
+        width: 70%;
+        margin-top: 5rem;
+    }
+
+    imgjojo:hover {
+        transition: 0.5;
+        transform: scale(1.3);
+    }
+}

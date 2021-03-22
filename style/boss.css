@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "SF Fedora", sans-serif;
+    background: linear-gradient(to top left, #e26081, #CC74C8);
+    color:#af32a9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-top: 3rem;
+}
+
+img {
+    width: 100%;
+    padding:0.5rem ;
+    border-radius: 2rem;
+    box-shadow: 10px 5px 10px black ;
+}
+
+.container {
+    width: 80%;
+    height: 93%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top left, #DC4E72, #CC74C8);
+    border-radius: 2rem;
+}
+
+.boss {
+    margin-right: 2rem;
+}
+
+.jojologo {
+    width: 150px;
+    height: 90%;
+    margin-top: -1rem;
+    box-shadow: none;
+}
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+.active {
+    color: white;
+}
+
+.bloc1 {
+   flex:13;
+}
+
+.bloc2{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(15,1fr);
+}
+
+
+.diavolo {
+    grid-column: 2/6;
+    grid-row: 2/16;
+}
+
+.doppio {
+    grid-column: 7/12;
+    grid-row: 8/16;
+}
+
+.bosst {
+    font-size: 13rem;
+    grid-column: 7/12;
+    grid-row: 3/7;
+    text-align: center;
+    padding-top: 8rem;
+}
+
+.diavolo:hover {
+    transition: transform .5s;
+   transform: scale(1.3);
+}
+
+.doppio:hover {
+    transition: transform 1s;
+   transform: scale(1.3);
+}
+
+
+
+@font-face {
+    font-family: "SF Fedora";
+    src: url("../font/sf_fedora/SF\ Fedora.ttf");
+}
+
+@media (max-width: 1100px) {
+    
+    body, html {
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+    .container {
+        width: auto;
+        height: auto;
+        background: linear-gradient(to top left, #e26081, #CC74C8);
+        background-size: cover;
+    }
+
+    .menu {
+        display: inline-block;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .bosst {
+        margin-top: 5rem;
+        font-size: 9rem;
+    }
+    
+    .bloc2 {
+        display: inline-block;
+        text-align: center;
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+
+    .imgjojo {
+        width: 70%;
+        margin-top: 5rem;
+    }
+
+    .imgjojo:hover {
+        transition: 0.5;
+        transform: scale(1.3);
+    }
+}
